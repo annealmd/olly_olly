@@ -26,19 +26,6 @@ class CityModel {
     return 'CityModel(id: $id, name: $name, coord: $coord, country: $country, population: $population, timezone: $timezone, sunrise: $sunrise, sunset: $sunset)';
   }
 
-  Map<String, dynamic> toMap() {
-    return {
-      'id': id,
-      'name': name,
-      'coord': coord?.toMap(),
-      'country': country,
-      'population': population,
-      'timezone': timezone,
-      'sunrise': sunrise,
-      'sunset': sunset,
-    };
-  }
-
   factory CityModel.fromMap(Map<String, dynamic> map) {
     return CityModel(
       id: map['id']?.toInt(),
@@ -51,8 +38,6 @@ class CityModel {
       sunset: map['sunset']?.toInt(),
     );
   }
-
-  String toJson() => json.encode(toMap());
 
   factory CityModel.fromJson(String source) =>
       CityModel.fromMap(json.decode(source));
