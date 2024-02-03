@@ -1,16 +1,34 @@
 # weather
 
-A new Flutter project.
+## Login
+test@email.com -> any with @\
+Test123 -> any with one Uppercase letter, a number and length >5 .
 
-## Getting Started
+## My SetUp
+Doctor summary (to see all details, run flutter doctor -v):\
+[√] Flutter (Channel stable, 3.16.9, on Microsoft Windows [Version 10.0.22621.3007], locale en-GB)\
+[√] Windows Version (Installed version of Windows is version 10 or higher)\
+[√] Android toolchain - develop for Android devices (Android SDK version 33.0.0)\
+[√] Chrome - develop for the web\
+[√] Visual Studio - develop Windows apps (Visual Studio Community 2022 17.2.3)\
+[√] Android Studio (version 2022.1)\
+[√] VS Code (version 1.86.0)\
+[√] Connected device (4 available)\
+[√] Network resources
 
-This project is a starting point for a Flutter application.
+## Arch
+Skipped Entities\
+treated Datasource as Repository.
 
-A few resources to get you started if this is your first Flutter project:
+## Tests
+Feature weather has some.
+### Coverage
+weather feature -> 69,9%
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Screens
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Web
+<img src="web_screenshot.png"  height="500">
+
+### Mobile
+<img src="screen_mobile.gif" width="300" />

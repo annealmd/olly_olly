@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:weather/core/Exceptions/weather_exception.dart';
-import 'package:weather/features/weather/domain/repositories/i_weather_repository.dart';
+import '../../../../../core/Exceptions/weather_exception.dart';
+import '../../../domain/repositories/i_weather_repository.dart';
 
 import 'weather_page_state.dart';
 

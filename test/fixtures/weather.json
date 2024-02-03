@@ -1,0 +1,59 @@
+{
+    "cod": "200",
+    "message": 0,
+    "cnt": 40,
+    "list": [
+        {
+            "dt": 1706821200,
+            "main": {
+                "temp": 27.5,
+                "feels_like": 29.62,
+                "temp_min": 24.15,
+                "temp_max": 27.5,
+                "pressure": 1012,
+                "sea_level": 1012,
+                "grnd_level": 937,
+                "humidity": 69,
+                "temp_kf": 3.35
+            },
+            "weather": [
+                {
+                    "id": 500,
+                    "main": "Rain",
+                    "description": "light rain",
+                    "icon": "10d"
+                }
+            ],
+            "clouds": {
+                "all": 96
+            },
+            "wind": {
+                "speed": 1.89,
+                "deg": 182,
+                "gust": 2.22
+            },
+            "visibility": 10000,
+            "pop": 0.77,
+            "rain": {
+                "3h": 0.79
+            },
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2024-02-01 21:00:00"
+        }        
+    ],
+    "city": {
+        "id": 3456814,
+        "name": "Montes Claros",
+        "coord": {
+            "lat": -16.735,
+            "lon": -43.8617
+        },
+        "country": "BR",
+        "population": 332379,
+        "timezone": -10800,
+        "sunrise": 1706777031,
+        "sunset": 1706823236
+    }
+}

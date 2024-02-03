@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'package:weather/features/weather/presenter/blocs/weather_page/weather_page_cubit.dart';
-import 'package:weather/features/weather/presenter/blocs/weather_page/weather_page_state.dart';
+import '../blocs/weather_page/weather_page_cubit.dart';
+import '../blocs/weather_page/weather_page_state.dart';
 
 import '../../../../core/dependency_injection/dependency_injector.dart';
 
@@ -13,6 +13,7 @@ import '../widgets/weather_container_widget.dart';
 
 class WeatherPage extends StatefulWidget {
   const WeatherPage({super.key});
+  static const routeName = '/web_page';
 
   @override
   State<WeatherPage> createState() => _WeatherPageState();

@@ -1,4 +1,4 @@
-import 'package:weather/features/weather/data/models/weather_model.dart';
+import '../../../data/models/weather_model.dart';
 
 abstract class WeatherPageState {
   const WeatherPageState();

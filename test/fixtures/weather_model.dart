@@ -11,9 +11,9 @@ final WeatherModel mockWeather = WeatherModel(
         dt: 1706821200,
         main: Main(
             temp: 27.5,
-            feelsLike: null,
-            tempMin: null,
-            tempMax: null,
+            feelsLike: 30.0,
+            tempMin: 23.4,
+            tempMax: 28.0,
             humidity: 69,
             tempKf: null),
         weather: [Weather(id: 500, description: 'light rain', icon: '10d')],
@@ -21,7 +21,7 @@ final WeatherModel mockWeather = WeatherModel(
         wind: Wind(speed: 1.89, deg: 182, gust: 2.22),
         visibility: 10000,
         pop: 0.77,
-        dtTxt: null)
+        dtTxt: DateTime(2023, 2, 3)),
   ],
   city: CityModel(
     id: 3456814,
