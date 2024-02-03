@@ -1,5 +1,3 @@
-import '../../data/models/weather_model.dart';
-
 abstract class IService {
   Future<ApiResponse> fetchWeather(
       {required String city,

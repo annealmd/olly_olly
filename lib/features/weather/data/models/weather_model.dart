@@ -18,19 +18,21 @@ class WeatherModel {
     this.city,
   });
 
-  
   factory WeatherModel.fromMap(Map<String, dynamic> map) {
     return WeatherModel(
       cod: map['cod'],
       message: map['message']?.toInt(),
       cnt: map['cnt']?.toInt(),
-      list: map['list'] != null ? List<ElementModel>.from(map['list']?.map((x) => ElementModel.fromMap(x))) : null,
+      list: map['list'] != null
+          ? List<ElementModel>.from(
+              map['list']?.map((x) => ElementModel.fromMap(x)))
+          : null,
       city: map['city'] != null ? CityModel.fromMap(map['city']) : null,
     );
   }
 
-
-  factory WeatherModel.fromJson(String source) => WeatherModel.fromMap(json.decode(source));
+  factory WeatherModel.fromJson(String source) =>
+      WeatherModel.fromMap(json.decode(source));
 
   @override
   String toString() {

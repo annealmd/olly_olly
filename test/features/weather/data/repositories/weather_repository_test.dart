@@ -1,4 +1,5 @@
 import 'package:dartz/dartz.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:weather/core/Exceptions/weather_exception.dart';
@@ -33,6 +34,7 @@ void main() {
     result.fold(
       (left) => fail('Expected Right, but got Left: $left'),
       (weatherModel) {
+        debugPrint(weatherModel.toString());
         expect(weatherModel, isA<WeatherModel>());
       },
     );

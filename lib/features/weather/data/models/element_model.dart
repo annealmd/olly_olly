@@ -37,9 +37,7 @@ class ElementModel {
       wind: map['wind'] != null ? Wind.fromMap(map['wind']) : null,
       visibility: map['visibility']?.toInt(),
       pop: map['pop']?.toDouble(),
-      dtTxt: map['dtTxt'] != null
-          ? DateTime.fromMillisecondsSinceEpoch(map['dtTxt'])
-          : null,
+      dtTxt: map['dt_txt'] != null ? DateTime.parse(map['dt_txt']) : null,
     );
   }
 
@@ -86,11 +84,11 @@ class Main {
   factory Main.fromMap(Map<String, dynamic> map) {
     return Main(
       temp: map['temp']?.toDouble(),
-      feelsLike: map['feelsLike']?.toDouble(),
-      tempMin: map['tempMin']?.toDouble(),
-      tempMax: map['tempMax']?.toDouble(),
+      feelsLike: map['feels_like']?.toDouble(),
+      tempMin: map['temp_min']?.toDouble(),
+      tempMax: map['temp_max']?.toDouble(),
       humidity: map['humidity']?.toInt(),
-      tempKf: map['tempKf']?.toDouble(),
+      tempKf: map['temp_Kf']?.toDouble(),
     );
   }
 
